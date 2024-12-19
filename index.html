@@ -12,7 +12,7 @@
     <header>
         <nav id="navbar">
             <div class="logo">MB</div>
-            <ul>
+            <ul class="nav-links">
                 <li><a href="#home" class="nav-link">Home</a></li>
                 <li><a href="#about" class="nav-link">About</a></li>
                 <li><a href="#experience" class="nav-link">Experience</a></li>
@@ -21,10 +21,10 @@
                 <li><a href="#expertise" class="nav-link">Expertise</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
-            <div class="menu-toggle" aria-label="Toggle navigation menu">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </nav>
     </header>
@@ -196,45 +196,53 @@
         <section id="languages" class="section">
             <h2 class="section-title">Language Skills</h2>
             <div class="languages-container">
-                <div class="language-item">
-                    <h3>English</h3>
-                    <div class="language-level">
-                        <div class="level-bar">
-                            <div class="level-progress" data-level="90"></div>
-                        </div>
+                <div class="language-item" data-language="English">
+                    <div class="language-info">
+                        <h3>English</h3>
                         <span class="level-text">Advanced (C1)</span>
                     </div>
-                    <p class="level-description">90% proficiency</p>
-                </div>
-                <div class="language-item">
-                    <h3>Hindi</h3>
                     <div class="language-level">
                         <div class="level-bar">
-                            <div class="level-progress" data-level="80"></div>
+                            <div class="level-progress" style="width: 90%"></div>
                         </div>
+                    </div>
+                    <p class="level-description">Fluent in both speaking and writing, with extensive experience in professional settings.</p>
+                </div>
+                <div class="language-item" data-language="Hindi">
+                    <div class="language-info">
+                        <h3>Hindi</h3>
                         <span class="level-text">Upper Intermediate (B2)</span>
                     </div>
-                    <p class="level-description">80% proficiency</p>
-                </div>
-                <div class="language-item">
-                    <h3>Malayalam</h3>
                     <div class="language-level">
                         <div class="level-bar">
-                            <div class="level-progress" data-level="60"></div>
+                            <div class="level-progress" style="width: 80%"></div>
                         </div>
+                    </div>
+                    <p class="level-description">Strong conversational skills with good understanding of cultural nuances.</p>
+                </div>
+                <div class="language-item" data-language="Malayalam">
+                    <div class="language-info">
+                        <h3>Malayalam</h3>
                         <span class="level-text">Intermediate (B1)</span>
                     </div>
-                    <p class="level-description">60% proficiency</p>
-                </div>
-                <div class="language-item">
-                    <h3>Nagamese</h3>
                     <div class="language-level">
                         <div class="level-bar">
-                            <div class="level-progress" data-level="100"></div>
+                            <div class="level-progress" style="width: 60%"></div>
                         </div>
+                    </div>
+                    <p class="level-description">Comfortable in daily conversations and basic professional contexts.</p>
+                </div>
+                <div class="language-item" data-language="Nagamese">
+                    <div class="language-info">
+                        <h3>Nagamese</h3>
                         <span class="level-text">Proficient (C2)</span>
                     </div>
-                    <p class="level-description">100% proficiency</p>
+                    <div class="language-level">
+                        <div class="level-bar">
+                            <div class="level-progress" style="width: 100%"></div>
+                        </div>
+                    </div>
+                    <p class="level-description">Native-like fluency in all aspects of the language.</p>
                 </div>
             </div>
         </section>
@@ -263,7 +271,7 @@
                     <p>Implementing and maintaining rigorous quality standards for food preparation, presentation, and service delivery.</p>
                 </div>
                 <div class="expertise-item">
-                    <i class="fas fa-chart-line"></i>
+                    <i class="fas fa-chart-line"></i><i class="fas fa-chart-line"></i>
                     <h3>Revenue Optimization</h3>
                     <p>Skilled in implementing upselling strategies and promotional activities to drive revenue growth and increase average check size.</p>
                 </div>
