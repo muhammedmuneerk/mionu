@@ -404,6 +404,62 @@ nav ul li a:hover::after {
     color: var(--secondary-color);
 }
 
+/* Language Skills Section */
+.languages-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.language-item {
+    width: width: 100%;
+    max-width: 400px;
+    background-color: var(--primary-color);
+    border: 1px solid var(--secondary-color);
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.language-item h3 {
+    color: var(--secondary-color);
+    margin-bottom: 10px;
+}
+
+.language-level {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.level-bar {
+    flex-grow: 1;
+    height: 10px;
+    background-color: var(--accent-color);
+    border-radius: 5px;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+.level-progress {
+    height: 100%;
+    background-color: var(--secondary-color);
+    transition: width 1s ease-in-out;
+}
+
+.level-text {
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+
+.level-description {
+    font-size: 0.9rem;
+    color: var(--text-color);
+}
+
 /* Expertise Section */
 .expertise-grid {
     display: grid;
