@@ -792,6 +792,11 @@ footer {
     .skills-container {
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     }
+
+    /* .skills-container {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 2fr));
+    } */
+
     .skill-name {
         font-size: 1rem;
     }
@@ -834,12 +839,14 @@ footer {
         height: 100px;
     }
 
+    
+
     .stat-number {
         font-size: 2.5rem;
     }
 
     .timeline-content {
-        padding: 1.5rem;
+        padding: 1rem;
     }
 }
 
