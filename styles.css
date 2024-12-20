@@ -735,10 +735,11 @@ footer {
         top: 5rem;
         flex-direction: column;
         background-color: var(--primary-color);
-        width: 100%;
+        width: 45%;
         text-align: center;
         transition: 0.3s;
         box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+        border-radius: 15px;
     }
 
     .nav-links.active {
@@ -746,7 +747,7 @@ footer {
     }
 
     .nav-links li {
-        margin: 2.5rem 0;
+        margin: 1rem 0;
     }
 
     .hamburger.active span:nth-child(2) {
@@ -778,8 +779,17 @@ footer {
         height: 250px;
     }
 
+    .timeline-item {
+        width: 100%;
+        padding-left: 65px;
+        padding-right: 20px;
+    }
+
     .skills-container {
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+    .skill-name {
+        font-size: 1rem;
     }
 
     .expertise-grid {
