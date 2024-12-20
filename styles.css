@@ -785,6 +785,10 @@ footer {
         padding-right: 20px;
     }
 
+    .timeline-content {
+        padding: 1rem;
+    }
+
     .skills-container {
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     }
@@ -813,6 +817,16 @@ footer {
     .profile-image {
         width: 200px;
         height: 200px;
+    }
+
+    .timeline-item {
+        width: 100%;
+        padding-left: 65px;
+        padding-right: 20px;
+    }
+
+    .timeline-content {
+        padding: 1rem;
     }
 
     .skill-item svg {
