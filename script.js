@@ -96,3 +96,14 @@ document.addEventListener('DOMContentLoaded', (event) => {
     });
 });
 
+// document.querySelectorAll('.skill-item').forEach((item) => {
+//     const progressCircle = item.querySelector('.progress');
+//     const skillValue = item.getAttribute('data-skill'); // e.g., 85%
+
+//     // Calculate the stroke-dashoffset based on the percentage
+//     const circumference = 2 * Math.PI * 45; // 45 is the radius
+//     const offset = circumference - (skillValue / 100) * circumference;
+
+//     // Apply the offset
+//     progressCircle.style.strokeDashoffset = offset;
+// });

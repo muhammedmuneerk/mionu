@@ -144,7 +144,8 @@ header {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('images/restaurant-bg.jpg') no-repeat center center/cover;
+    /* background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('images/restaurant-bg.jpg') no-repeat center center/cover; */
+    background: linear-gradient(to bottom, #000000, #1a1a1a), url('images/restaurant-bg.jpg') no-repeat center center/cover;
     position: relative;
     overflow: hidden;
 }
@@ -418,12 +419,52 @@ header {
     stroke-width: 8;
 }
 
+
+
 .skill-item .progress {
     stroke: var(--secondary-color);
     stroke-dasharray: 283;
     stroke-dashoffset: 283;
     transition: stroke-dashoffset 1s ease-in-out;
 }
+/* to put the skill-image/svg inside the circle but without the animation */
+.skill-item {
+    display: inline-block;
+    text-align: center;
+}
+
+svg {
+    width: 100px; 
+    height: 100px;
+}
+
+.progress {
+    stroke-dasharray: 283; 
+    stroke-dashoffset: 283; 
+    transition: stroke-dashoffset 1s ease-in-out;
+    stroke: var(--secondary-color, blue);
+}
+/* ------------------- */
+/* .skill-item .progress "with the circle animations" */
+/* .progress {
+    stroke: var(--secondary-color);
+    stroke-dasharray: 283; 
+    stroke-dashoffset: 283; 
+    transition: stroke-dashoffset 0.3s ease-in-out;
+}
+
+.skill-item:hover .progress {
+    stroke-dashoffset: 0; 
+}
+
+.skill-item {
+    stroke: var(--secondary-color);
+    stroke-dasharray: 283;
+    stroke-dashoffset: 283;
+    transition: stroke-dashoffset 1s ease-in-out;
+} */
+/* ----------------------------- */
+
 
 .skill-name {
     font-size: 1.1rem;
