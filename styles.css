@@ -164,14 +164,14 @@ header {
     text-transform: uppercase;
     position: relative;
     color: var(--primary-color);
-    text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
+    /* text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
                 -0.025em -0.05em 0 rgba(0, 255, 0, 0.75),
-                0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+                0.025em 0.05em 0 rgba(0, 0, 255, 0.75); */
     animation: glitch 500ms infinite;
     margin-bottom: 1rem;
 }
 
-@keyframes glitch {
+/* @keyframes glitch {
     0% {
         text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
                     -0.05em -0.025em 0 rgba(0, 255, 0, 0.75),
@@ -207,7 +207,7 @@ header {
                 -0.025em -0.025em 0 rgba(0, 255, 0, 0.75),
                 -0.025em -0.05em 0 rgba(0, 0, 255, 0.75);
     }
-}
+} */
 
 .subtitle {
     font-size: 1.8rem;
@@ -419,8 +419,6 @@ header {
     stroke-width: 8;
 }
 
-
-
 .skill-item .progress {
     stroke: var(--secondary-color);
     stroke-dasharray: 283;
@@ -464,7 +462,6 @@ svg {
     transition: stroke-dashoffset 1s ease-in-out;
 } */
 /* ----------------------------- */
-
 
 .skill-name {
     font-size: 1.1rem;
@@ -587,6 +584,66 @@ svg {
     padding: 0 var(--section-padding);
 }
 
+.contact-info-container {
+    max-width: 600px;
+    margin: 0 auto 3rem;
+    padding: 0 var(--section-padding);
+}
+
+.contact-methods {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.contact-method {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: var(--primary-color);
+    border: 1px solid var(--secondary-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: var(--transition);
+    min-width: 180px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.contact-method:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.contact-method i {
+    font-size: 2rem;
+    color: var(--secondary-color);
+    flex-shrink: 0;
+}
+
+.contact-method h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.3rem;
+    color: var(--secondary-color);
+}
+
+.contact-method p {
+    margin: 0;
+    white-space: nowrap;
+}
+
+.contact-method a {
+    color: var(--text-color);
+    text-decoration: none;
+    transition: var(--transition);
+    font-size: 1rem;
+}
+
+.contact-method a:hover {
+    color: var(--secondary-color);
+}
+
 .form-group {
     position: relative;
     margin-bottom: 2rem;
@@ -700,6 +757,32 @@ footer {
 }
 
 .social-links a:hover {
+    color: var(--accent-color);
+}
+
+.contact-info {
+    margin-top: 1.5rem;
+}
+
+.contact-info p {
+    margin-bottom: 0.8rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.contact-info i {
+    font-size: 1.2rem;
+    color: var(--primary-color);
+}
+
+.contact-info a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.contact-info a:hover {
     color: var(--accent-color);
 }
 
@@ -888,6 +971,27 @@ footer {
 
     .timeline-content {
         padding: 1rem;
+    }
+
+    .contact-methods {
+        gap: 1rem;
+    }
+
+    .contact-method {
+        padding: 1rem;
+        min-width: 150px;
+    }
+
+    .contact-method i {
+        font-size: 1.5rem;
+    }
+
+    .contact-method h3 {
+        font-size: 1rem;
+    }
+
+    .contact-method a {
+        font-size: 0.9rem;
     }
 }
 
